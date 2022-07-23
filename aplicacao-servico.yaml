@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: servico-aplicacao
+  labels:
+    app: aplicacao-pod
+    tier: frontend
+spec:
+  type: LoadBalancer
+  ports:
+    - port: 80
+  selector:
+    name: aplicacao-pod
+    app: aplicacao-pod
+    tier: frontend
