@@ -3,6 +3,10 @@ azure_kubernetes_exemplo
 
 ### Azure Kubernetes
 
+    az login
+
+    az aks get-credentials --resource-group alurasports-rg --name k8s
+
 #### conecte no banco
     kubectl get pods    
     kubectl exec -it deployment-mysql-5c4d88fc5-g4w7s sh
@@ -41,3 +45,8 @@ Para testar a aplicação, execute
     
     kubectl get services
     minikube service servico-aplicacao.
+
+
+## Segredos
+
+kubectl create secret docker-registry alurasportsfabiao.secret --docker-server alurasportsfabiao.azurecr.io --docker-username
