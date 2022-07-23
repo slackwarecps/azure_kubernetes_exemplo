@@ -47,6 +47,13 @@ Para testar a aplicação, execute
     minikube service servico-aplicacao.
 
 
-## Segredos
+## Segredos exemplo
 
-kubectl create secret docker-registry alurasportsfabiao.secret --docker-server alurasportsfabiao.azurecr.io --docker-username
+kubectl create secret docker-registry alurasportsfabiao.secret --docker-server alurasportsfabiao.azurecr.io --docker-username alurasportsfabiao --docker-password HHO3oXC+v1c9tMQczTcVyARS1sv8ToRM
+
+    alurasportsfabiao
+    HHO3oXC+v1c9tMQczTcVyARS1sv8ToRM
+
+### Comandos Uteis
+    kubectl version
+    
